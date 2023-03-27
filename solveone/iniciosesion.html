@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="img/sociego1.jpeg" type="imagen/x-icon">
+    <title>Bienvenido a mi Formulario</title>
+</head>
+
+<body>
+    <div class="container-form sign-up">
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido a Vidrios El Sociego</h2>
+                <p>Si ya tienes una cuenta de administrador por favor inicia sesion aqui</p>
+                <br>
+                <br>
+<div>
+     <a href="./iniciosesion2.html" class="botton3">Iniciar Sesion</a>
+</div>
+               
+            </div>
+        </div>
+        <form class="formulario">
+            <h2 class="create-account">Crear una cuenta</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-linkedin' ></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+            </div>
+            <p class="cuenta-gratis">Crear una cuenta gratis</p>
+            <input type="text"placeholder="Nombre" aria-required="true">
+            <label for="username">Tipo de Usuario</label>
+        <select name="Coordinacion" id="">
+            <option value="1">ADMINISTRADOR</option>
+            <option value="2">EMPLEADO</option>
+            <option value="3">AUXILIAR</option>
+        </select>
+        <br>
+        <br>
+
+            <input type="email" placeholder="Email : anbotton@hlt.com"required >
+            <input type="password" placeholder="Contraseña" required>
+            <input type="button" value="Registrarse"required>
+            <br>
+            <a href="index.html" class="botton">volver</a>
+        </form>
+    </div>
+    <div class="container-form sign-in">
+        <form class="formulario">
+            <a href="./iniciosesion2.html">inicia Sesion</a> 
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-linkedin' ></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+            </div>
+            <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Contraseña">
+            <button><a href="./iniciosesion2.html"> inicio de Sesion</a></button>
+        </form>
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido de nuevo</h2>
+                <p>Si aun no tienes una cuenta por favor registrese aqui</p>
+                <button class="sign-in-btn">Registrarse</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

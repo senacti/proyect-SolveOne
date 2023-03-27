@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&family=Open+Sans&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: "montserrat",serif;
+    position: relative;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background:linear-gradient(70deg,black,white);
+   
+   
+
+}
+
+.logo{
+    width: 140px;
+    margin-left: 20px;
+    margin-top: 170px;
+    background:linear-gradient(70deg,black,white);
+}
+
+.bar-btn{
+    font-size: 25px;
+    color: #fff;
+    margin-right: 20px;
+    cursor:pointer;
+    background:linear-gradient(70deg,black,white);
+}
+
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+   background: rgba(0, 0, 0, .95 );
+    text-align: center;
+    transition: all .5s;
+
+   
+}
+
+.nav-menu li{
+    display: none;
+    line-height: 20px;
+    margin: 70px 0;
+    transition: all .5s;
+    font-family: Arial;
+    text-decoration: none;
+
+}
+
+.nav-menu li a{
+    color: rgb(216, 50, 21);
+font-size: 15px;
+text-transform: center;
+font-weight: 600;
+margin-right: 40px;
+padding: 10px  30px;
+background-color: rgb(117, 26, 26);
+color: #fff;
+border-radius: 20px;
+text-decoration: none;
+
+} 
+.nav-menu li a.active , .nav-menu li a:hover{
+    color: rgb(255, 255, 255);
+    transition: .3s;
+
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#check{
+    display: none;
+
+}
+
+#check:checked ~ .nav-menu{
+    height: 100vh;
+
+}
+
+#check:checked ~ .nav-menu li {
+ display: block;
+
+}
+
+.banner-text{
+  padding: 0 30px;
+  margin-top: 150px;
+  text-align: center;
+  color: rgb(14, 14, 14);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  align-items: center;
+
+}
+
+.button1{
+    margin-right: 40px;
+    padding: 10px  30px;
+    background-color: rgb(146, 20, 20);
+    color: rgb(250, 250, 250);
+    border-radius: 1px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.button1:hover{
+background-color:rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+transition: 0.5s;
+
+}
+
+.button2{
+    margin-right: 40px;
+    padding: 10px  30px;
+    background-color: rgb(253, 252, 252);
+    color: rgb(168, 30, 30);
+    border-radius: 1px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+.button2:hover{
+    background-color:rgb(199, 20, 20);
+color: rgb(0, 0, 0);
+transition: 0.5s;
+}
+
+@media screen and (min-width: 768px){
+    .logo{
+        margin-left:30px;
+        border-radius: 6px;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.50);
+    }
+    nav{
+        height: 100px;
+        background: linear-gradient(70deg, black, white);
+    }
+
+    .bar-btn{
+        display:none ;
+    }
+
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top: 7%;
+        background: none;
+        transition: none;
+        text-align: center;
+        margin-right: 10px;
+        border-radius: 6px;
+        box-shadow: 0px  2px 0px rgba(77, 11, 11, 0.986);
+    }
+
+    .nav-menu li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 3px;
+        transition: none;
+    }
+    .nav-menu li a{
+        font-size: 15px;
+        text-align: center;
+    
+    }
+
+    .banner-text h1{
+        font-size: 70px;
+        margin-bottom: 30px;
+
+    }
+
+    .banner-text h2{
+     font-size: 40px;
+    }
+}
+      section{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 50px 0;
+      }
+      section h2{
+        width: 100%;
+        color: rgb(170, 35, 35);
+        font-family: monospace;
+      }
+      .card{
+        width: 33.333333%;
+      }
+      
+      .estilo-c .img-container .favorite{
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background: rgb(255, 255, 255);
+        border-radius: 70%;
+        height: 33px;
+        width: 30px;
+        cursor: pointer;
+      }
+      .estilo-c.img-container .favorite svg{
+        transform: translatey(0px);
+      }
+      .estilo-c .img-container .favorite:hover{
+        background: red;
+      }
+      .estilo-c .img-container .favorite:hover svg{
+        fill: white;
+      }
+      .estilo-c{
+        font-family: sans-serif;
+        width: 30%;
+      }
+      .estilo-c .img-container{
+        overflow: hidden;
+        height: 250px;
+        position: relative;
+        border-radius: 15px;
+      }
+      .estilo-c .img-container img{
+        width: 105%;
+        position: absolute;
+        top: -60%;
+        transition: all 0.5s;
+      }
+      .estilo-c:hover .img-container img{
+        transform: scale(1.2);
+      }
+      .estilo-c .img-container .promo{
+        position:relative;
+        top: 10px;
+        left: 0;
+        font-size: 20px;
+        background: rgb(0, 0, 0);
+        padding: 15px;
+        color: rgb(255, 255, 255);
+        border-bottom-right-radius: 25px;
+        border-top-right-radius: 25px;
+      }
+      .estilo-c .info-container{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+      }
+      .estilo-c .info-container h3{
+        margin: 0;
+      }
+      .estilo-c .info-container h3,
+      .estilo-c .info-container strong,
+      .estilo-c .info-container span{
+        padding: 5px 15px;
+        width: 100%;
+      }
+      .estilo-c .add-cart{
+        margin-top: 2px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: rgb(138, 24, 24);
+        padding: 15px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 25px;
+      }
+      .estilo-c .add-cart:hover{
+        color: black;
+        background-color: transparent;
+        border: 1px solid black;
+      }
+
+      .rating{
+          color: rgb(201, 198, 30);
+      }
+    
+      .social-link:hover{
+        opacity: 0.7;
+    }
+    
+    footer .social-link:nth-of-type(2){
+        background-image: url(img/TwitterBlanco.png);
+    }
+    
+    footer .social-link:nth-of-type(3){/*Nth of type inside that container*/
+        background-image: url(img/LinkedinBlanco.png);
+    }
+    .footer-container {
+        
+        width:100%;
+        background:rgb(0, 0, 0);
+        padding-top: 6%;
+       
+     }
+     .andres{
+         margin-left: 21%;
+     }
+     footer{
+   
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--dark);
+        color: white;
+        background-color: #121212;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .copyright-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .copyright{
+        font-size: 12px;
+        opacity: 0.7;
+        font-weight: 400;
+        padding: 10px 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .footer-menus{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 40%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .footer-container{
+        height: fit-content;
+        width: 100%;
+        padding: 3rem 6rem;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-family: Arial, Helvetica, sans-serif;
+      
+    }
+    
+    .footer-content-container{
+        display: block;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    
+    footer .website-logo{
+        margin-bottom: 1.2rem;
+        font-size: calc(1vw + 20px);
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    
+    .footer-info, .menu-item-footer{
+        margin: 0.3rem 0;
+        opacity: 0.7;
+        color: white;
+        text-decoration: none;
+        transition: 0.5s;
+        font-family: Arial, Helvetica, sans-serif;
+       
+     
+    }
+    .footer-info{
+        margin-right: 5%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .menu-item-footer:hover{
+        opacity: 1;
+     
+    }
+    .menu-title{
+        font-size: var(--medium-text-font);
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 1.2rem;
+    
+    }
+    .social-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    
+    .social-link{
+        height: 100%;
+        width: 30px;
+        background-image: url(img/FacebookBlanco.png);
+        background-size: 70%;
+        margin-right: 1rem;
+        background-repeat: no-repeat;
+        font-family: Arial, Helvetica, sans-serif;
+       
+    }
+    
+    .social-link:hover{
+        opacity: 0.7;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    footer .social-link:nth-of-type(2){
+        background-image: url(img/TwitterBlanco.png);
+    }
+    
+    footer .social-link:nth-of-type(3){/*Nth of type inside that container*/
+        background-image: url(img/LinkedinBlanco.png);
+    }
+    
+      
+      

@@ -1,0 +1,89 @@
+
+.body{
+    background-color: black;
+    background-image: url(https://c.wallhere.com/photos/70/3e/light_shadow_glass_jack_drink_whiskey_cast_alcohol-882726.jpg!d);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 40%;
+    
+}
+.Opcion1 {
+    background-color: rgb(129, 124, 124);
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 27px;
+    color: rgba(20, 22, 22, 0.911);
+    padding: 50px;
+    border: solid;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a{
+    color:black;
+    display: inline;
+    font-size: 20px;
+}
+a:hover{
+    color: rgb(16, 19, 16);
+}
+input.botonC {
+    border-radius: 6px;
+    width: 56px;
+    height: 25px;
+    font-size: 10px;
+    margin: 9px;
+}
+h1{
+    font-family: fantasy;
+}
+select{  
+    margin-bottom: 14PX;
+    margin-bottom: 20px;
+    width: 320px;
+    height: 34px;
+    border-block-color: black;
+    border-radius: 11px;
+}
+input#edad{
+    margin-bottom: 20px;
+    width: 320px;
+    height: 34px;
+    border-block-color: black;
+    border-radius: 11px;
+}
+input#password {
+    margin-bottom: 20px;
+    width: 320px;
+    height: 34px;
+    border-block-color: black;
+    border-radius: 11px;
+}
+input#email {
+    margin-bottom: 20px;
+    width: 320px;
+    height: 34px;
+    border-block-color: black;
+    border-radius: 13px;
+}
+input[type="text"] {
+    margin-bottom: 20px;
+    width: 320px;
+    height: 34px;
+    border-block-color: black;
+    border-radius: 12px;
+}
+label {
+    font-size: 20px;
+    color: black;
+}
+h1{
+    color: black;
+}
+.hr{
+    
+    box-shadow: 0px  2px 2px rgba(255, 255, 255, 0.986);
+}
